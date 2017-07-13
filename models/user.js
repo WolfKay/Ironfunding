@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
-const schema = mongoose.schema;
+const Schema = mongoose.Schema;
 
-const UserSchema = new Schema ({
+const DEFAULT_IMG_URL = "https://placeholdit.imgix.net/~text?txtsize=33&txt=250%C3%97250&w=250&h=250";
+
+const UserSchema = new Schema({
   username: {type: String, required: true, unique: true},
   password: {type: String, required: true},
   email: {type: String, required: true, unique: true},
@@ -10,5 +12,5 @@ const UserSchema = new Schema ({
 
 });
 
-const User = mongoose.model ('User', UserSchema);
+const User = mongoose.model('User', UserSchema);
 module.exports = User;

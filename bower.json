@@ -3,7 +3,7 @@
   "description": "Crowdfunding for haxs",
   "main": "",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/WolfKay/Ironfunding",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -12,6 +12,10 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^3.2.1"
-  }
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7"
+  },
+  "authors": [
+    "WolfKay <haroboros@gmail.com>"
+  ]
 }
